@@ -12,8 +12,12 @@
 2. Execute the following command: `ssh YOUR_NET_ID@linux.ews.illinois.edu`
 3. Enter your Active Directory password when prompted.
 
+### Linux
+1. Open a terminal window and run `ssh YOUR_NET_ID@linux.ews.illinois.edu`.
+2. Enter your Active Directory password when prompted.
+
 ## Setting up a Flask Virtual Environment
-1. Once you've opened up an SSH session using the instructions above, issue the following commands:
+1. Once you've opened up an SSH session using the instructions above (or have a terminal open locally on an EWS machine), issue the following commands:
 
   ```
   module load python/2.7.10
@@ -29,5 +33,5 @@
 4. Now you can install any other packages you may need (for example, `Flask-API`) by running `pip install PACKAGE_NAME`.
 
 ## Using the Virtual Environment
-1. When you SSH into the EWS machine, run `source ~/python_env/bin/activate` to activate your Python environment.
+1. When you SSH into the EWS machine (or have a terminal open locally), run `source ~/python_env/bin/activate` to activate your Python environment.
 2. To exit the Virtual Environment and get back to the 'normal' EWS environment, simply run `deactivate`
