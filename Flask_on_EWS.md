@@ -2,9 +2,10 @@
 ## Connecting to EWS
 ### Windows
 1. Install `PuTTY` from [this download page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). You only need to get `putty.exe`.
-2. Open `PuTTY` and in the `hostname` box, enter `YOUR_NET_ID@linux.ews.illinois.edu`
-3. Optionally, add a name in Saved Sessions like "UIUC AWS" and click save to save this URL for future sessions.
-4. Click `Open` and enter your Active Directory password when prompted.
+2. Open `PuTTY`. In the `hostname` box, enter `YOUR_NET_ID@linux.ews.illinois.edu`
+3. To save this URL for future sessions, add a name in Saved Sessions like "UIUC AWS" and click `Save`. (optional)
+4. Click `Open` to activate the session.
+5. Enter your Active Directory password when prompted.
 
 ### Mac
 1. Open the `Terminal` application by finding it in `Applications/Utilities/Terminal` or by doing `Command-Space` and typing in `Terminal`.
@@ -13,16 +14,18 @@
 
 ## Setting up a Flask Virtual Environment
 1. Once you've opened up an SSH session using the instructions above, issue the following commands:
-```
-module load python/2.7.10
-virtualenv ~/python_env
-```
+
+  ```
+  module load python/2.7.10
+  virtualenv ~/python_env
+  ```
 2. This will create a folder called `python_env` in your home directory. Now do `cd ~/python_env` to enter that folder.
 3. Run the following commands to update your pip installer and install the Flask modules.
-```
-pip install --upgrade pip
-pip install Flask
-``` 
+
+  ```
+  pip install --upgrade pip
+  pip install Flask
+  ``` 
 4. Now you can install any other packages you may need (for example, `Flask-API`) by running `pip install PACKAGE_NAME`.
 
 ## Using the Virtual Environment
