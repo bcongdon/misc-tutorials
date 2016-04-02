@@ -24,13 +24,14 @@
   virtualenv ~/python_env
   ```
 2. This will create a folder called `python_env` in your home directory. Now do `cd ~/python_env` to enter that folder.
-3. Run the following commands to update your pip installer and install the Flask modules.
+3. Run `source ~/python_env/bin/activate` to activate your Python environment.
+4. Run the following commands to update your pip installer and install the Flask modules.
 
   ```
   pip install --upgrade pip
   pip install Flask
   ``` 
-4. Now you can install any other packages you may need (for example, `Flask-API`) by running `pip install PACKAGE_NAME`.
+5. Now you can install any other packages you may need (for example, `Flask-API`) by running `pip install PACKAGE_NAME`.
 
 ## Using the Virtual Environment
 1. When you SSH into the EWS machine (or have a terminal open locally), run `source ~/python_env/bin/activate` to activate your Python environment.
