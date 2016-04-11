@@ -65,6 +65,10 @@ A `PUT` request is useful when we want to have the ability for our users to send
 4. Notice that you don't have to change anything with the `api` object because we've routed all requests to our `CourseInfo` object. That one call routes both `get` and `put` requests to that same object.
 5. To reiterate, this type of request can be useful when we want to have the user *send* us data, which we may do some work with to store on the server.
 
+
+## Full Code
+I've created a gist with the [full code](https://gist.github.com/benjamincongdon/5044c344ab23dc6d956d5f7831579baa) of this tutorial.
+
 ## Next Steps
 Where do we go from here? Well, this is just the first steps in writing a functional, useful API. A lot about writing a good API is not even the request handling itself, but rather the tools that you've built up around storing and managing user data that allows you to have more interesting functionality. You may have to query databases, or handle several different arguments when you receive a `get` request. Think about what types of tasks you're users will need to accomplish with your API and design the types of interactions your backend accepts accordingly.
 
